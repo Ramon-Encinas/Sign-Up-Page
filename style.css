@@ -1,0 +1,38 @@
+:root {
+    --amethyst: #A05ED7ff;
+    --sunglow: #FEC81Dff;
+    --plum-web: #E6A5E8ff;
+    --cadmium-red: #E6091Bff;
+    --cyan-process: #0AADE4ff;
+    --yellow: #FFFE00ff;
+    --violet-web: #FE81E5ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    padding: 0%;
+}
+
+.background {
+    flex-grow: 1;
+    background-image: url(hongkong.jpg);
+    background-size: contain;
+    height: 100vh;
+    border: var(--violet-web);
+
+}
+
+.content {
+    flex-grow: 2;
+    background-color: white;
+    color: white;
+    background-color: black;
+}
