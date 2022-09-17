@@ -6,6 +6,8 @@
     --cyan-process: #0AADE4ff;
     --yellow: #FFFE00ff;
     --violet-web: #FE81E5ff;
+    --gray: rgb(170, 173, 176);
+
 }
 
 * {
@@ -14,12 +16,13 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     display: flex;
     flex-direction: row;
     width: 100vw;
     height: 100vh;
     padding: 0%;
+    color: var(--gray);
 }
 
 .background {
@@ -36,8 +39,6 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     width: calc(200% / 3);
-    background-color: white;
-    color: white;
     background-color: black;
 }
 
@@ -51,16 +52,19 @@ body {
 .submission-form {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 100%;
 }
 
 .columns {
     display: flex;
     flex-direction: row;
     border: 2px solid var(--violet-web);
-    border-radius: 10px;
+    border-left: 0;
+    border-right: 0;
     padding: 2em;
     padding-top: 0;
+    padding-bottom: 52px;
+
 }
 
 .left-column,
@@ -71,17 +75,73 @@ body {
 label {
     display: block;
     padding: 2rem 0 .5rem;
+    color: var(--gray);
 }
 
 
 input {
     display: block;
     width: 70%;
+    height: 10%;
+    font-size: 20px;
+    border: 1px solid var(--gray);    
+    border-radius: 2px;
+    background-color: black;
+    color: var(--gray);
+ 
+}
+
+input:focus {
+    outline: none;
+    border: 3px solid var(--sunglow);
+    box-shadow: 0 0 10px var(--sunglow);
+}
+
+
+.content-text,
+.bottom-column,
+.user-login {
+    padding-left: 32px;
+}
+
+.content-text {
+    font-size: 25px;
+    padding-right: 32px;
 }
 
 #sendBtn {
-    width: auto;
+    width: calc(100% / 3);
+    height: 70px;
     margin-top: 2rem;
     cursor: pointer;
     padding: 5px;
+    background-color: black;
+    border: 4px solid var(--cyan-process);
+    border-radius: 10px;
+    color: var(--cyan-process);
+    font-size: 30px;
+    font-weight: bold;
+}
+ 
+#sendBtn:hover {
+    color: black;
+    background-color: var(--cyan-process);
+    box-shadow: 0 0 15px var(--cyan-process);
+
+}
+
+.user-login {
+    font-size: 28px;
+    height: auto;
+}
+
+.logIn {
+    color: var(--cadmium-red);
+    font-weight: bolder;
+    font-size: 32px;
+}
+
+.logIn:hover {
+    text-shadow: 0px 0px 28px var(--cadmium-red);
+    cursor: pointer;
 }
