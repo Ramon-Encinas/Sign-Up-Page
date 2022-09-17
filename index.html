@@ -14,31 +14,31 @@
         <div class="content-text">
             <p>This is not a real online service! You know you need something like this 
                 in you life to help ypu realize your deepest dreams. Sign up now ot get started.</p>
-            <p>You know you want to.</p>
+            <p>You <em>know</em> you want to.</p>
         </div>
         <div class="user-info">
             <form class="submission-form">
                 <div class="columns">
                     <div class="left-column">
-                        <label>FIRST NAME</label>
-                        <input>
+                        <label for="firstName">FIRST NAME</label>
+                        <input type="text" name="firstName" id="firstName" required>
                     
-                        <label>EMAIL</label>
-                        <input>
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" id="email" required>
                     
-                        <label>PASSWORD</label>
-                        <input>
+                        <label for="password">PASSWORD</label>
+                        <input type="password" name="password" id="password" required>
                     </div>
                     
                     <div class="right-column">
-                        <label>LAST NAME</label>
-                        <input>
+                        <label for="lastName">LAST NAME</label>
+                        <input type="text" name="lastName" id="lastName" required>
                     
-                        <label>PHONE NUMBER</label>
-                        <input>
+                        <label for="pNumber">PHONE NUMBER</label>
+                        <input type="tel" name="pNumber" id="pNumber">
                     
-                        <label>CONFIRM PASSWORD</label>
-                        <input>
+                        <label for="confPassword">CONFIRM PASSWORD</label>
+                        <input type="password" name="confPassword" id="confPassword" required>
                     </div>
                 
                 </div>
@@ -50,7 +50,7 @@
             </form>
         </div>
         <div class="user-login">
-            <span>Already have an account? Log in</span>
+            <span>Already have an account? <span class="logIn">Log in</span></span>
         </div>
     </div>
 </body>
