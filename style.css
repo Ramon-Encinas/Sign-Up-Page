@@ -14,6 +14,7 @@
 }
 
 body {
+    font-family: sans-serif;
     display: flex;
     flex-direction: row;
     width: 100vw;
@@ -22,17 +23,65 @@ body {
 }
 
 .background {
-    flex-grow: 1;
+    width: calc(100% / 3);
     background-image: url(hongkong.jpg);
-    background-size: contain;
-    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     border: var(--violet-web);
 
 }
 
 .content {
-    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: calc(200% / 3);
     background-color: white;
     color: white;
     background-color: black;
+}
+
+
+.user-info{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.submission-form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.columns {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid var(--violet-web);
+    border-radius: 10px;
+    padding: 2em;
+    padding-top: 0;
+}
+
+.left-column,
+.right-column {
+    width: 50%;
+}
+
+label {
+    display: block;
+    padding: 2rem 0 .5rem;
+}
+
+
+input {
+    display: block;
+    width: 70%;
+}
+
+#sendBtn {
+    width: auto;
+    margin-top: 2rem;
+    cursor: pointer;
+    padding: 5px;
 }
